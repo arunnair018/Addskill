@@ -1,4 +1,6 @@
-class sorting_algo:
+import random
+
+class sorting:
     
     def meta(self,li):
         print('list: {}'.format(li))
