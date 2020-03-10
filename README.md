@@ -4,7 +4,6 @@
 [**Python Cheatsheet**](https://perso.limsi.fr/pointal/_media/python:cours:mementopython3-english.pdf)
 
 ## Sorting Class
----
 A class for sorting functions (currently: bubble, insertion, count, merge and quick) 
 **How to use**
 * Copy *sorting_class.py* into working directory.
