@@ -9,7 +9,9 @@ A class for sorting functions (currently: bubble, insertion, count, merge and qu
 **How to use**
 * Copy *sorting_class.py* into working directory.
 * Import sorting class
-```from sorting_class import sorting_algo ```
+```
+from sorting_class import sorting_algo 
+```
 * Make class object
 ```sort_obj = sorting_algo()```
 * Pass the list to the functions. return will be a sorted list.
