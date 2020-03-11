@@ -4,7 +4,7 @@
 [**Python Cheatsheet**](https://perso.limsi.fr/pointal/_media/python:cours:mementopython3-english.pdf)
 
 ## Sorting Class
-A class for sorting functions (currently: bubble, insertion, count, merge and quick) 
+A class for sorting functions (currently: bubble, insertion, count, merge and quick)  
 **How to use**
 * Copy *sorting_class.py* into working directory.
 * Import sorting class
@@ -28,7 +28,7 @@ sorted_list = sort_obj.quick_sort(list)
 sorted_list = sort_obj.meta(list)
 ```
 ## Binary Search Tree Class
-A class for BST functions (currently: insertion, deletion, traversal, find_min, find_max, maximum_depth) 
+A class for BST functions (currently: insertion, deletion, traversal, find_min, find_max, maximum_depth)  
 **How to use**
 * Copy *bst_class.py* into working directory.
 * Import bst class
