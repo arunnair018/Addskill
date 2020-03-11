@@ -28,7 +28,7 @@ sorted_list = sort_obj.quick_sort(list)
 sorted_list = sort_obj.meta(list)
 ```
 ## Binary Search Tree Class
-A class for BST functions (currently: insertion, deletion, traversal, find_min, find_max) 
+A class for BST functions (currently: insertion, deletion, traversal, find_min, find_max, maximum_depth) 
 **How to use**
 * Copy *bst_class.py* into working directory.
 * Import bst class
@@ -42,8 +42,10 @@ tree = bst()
 * Operations on tree
 ```
 tree.insert(value)
-tree.traversal()
 tree.delete(value)
 min = tree.find_min()
 max = tree.find_max()
+tree.dfs()
+tree.bfs()
+tree.max_depth()
 ```
