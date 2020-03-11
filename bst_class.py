@@ -32,7 +32,7 @@ class bst:
                 root.left = node(key)
     
     # traverse throughout the tree
-    def traversal(self):
+    def dfs(self):
         print('inorder: ',end='')
         self.inorder_traversal(self.root)
         print('\npreorder: ',end='')
@@ -121,3 +121,33 @@ class bst:
             root.right = self._delete(root.right,temp.key)
         return root
 
+    def max_depth(self):
+        return self._max_depth(self.root)
+
+    def _max_depth(self,node):
+        if node is None:
+            return 0
+        else:
+            ldepth = self._max_depth(node.left)
+            rdepth = self._max_depth(node.right)
+            if ldepth > rdepth:
+                return ldepth+1
+            else:
+                return rdepth+1
+
+    def bfs(self):
+        ptr = self.root
+        out = []
+        q = []
+        q.append(self.root)
+        height=self.max_depth()
+        for i in range(height-1):
+            for j in range(2**i):
+                node = q.pop(0)
+                out.append(node.key)
+                if node.left : q.append(node.left)
+                if node.right : q.append(node.right)
+        while q:
+            node = q.pop(0)
+            out.append(node.key)
+        return out
