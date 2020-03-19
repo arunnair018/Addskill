@@ -27,7 +27,7 @@ sorted_list = sort_obj.quick_sort(list)
 ```
 sorted_list = sort_obj.meta(list)
 ```
-**## Binary Search Tree Class**
+## **Binary Search Tree Class**  
 A class for BST functions (currently: insertion, deletion, traversal, find_min, find_max, maximum_depth)  
 **How to use**
 * Copy *bst_class.py* into working directory.
@@ -49,7 +49,7 @@ tree.dfs()
 tree.bfs()
 tree.max_depth()
 ```
-**## Heap Class**
+## **Heap Class**  
 A class for heap functions (currently: push, pop, min_heap, max_heap, show_heap)  
 **How to use**
 * Copy *heap_class.py* into working directory.
