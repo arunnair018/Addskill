@@ -3,8 +3,12 @@ maxint=9999
 class Graph(): 
     def __init__(self, vertices):
         self.V = vertices
-        self.graph = [[0 for column in range(vertices)] 
-                      for row in range(vertices)]
+        self.graph = [[0,5,0,9,2,0],
+                    [5,0,2,0,0,0],
+                    [0,2,0,3,0,0],
+                    [9,0,3,0,0,2],
+                    [2,0,0,0,0,3], 
+                    [0,0,0,2,3,0]]
     def printSolution(self, dist,src):
         print ("Vertex Distance from Source node ",src)
         for node in range(self.V):
@@ -28,20 +32,20 @@ class Graph():
                         dist[v] = dist[u] + self.graph[u][v]
         self.printSolution(dist,src)
         
-x=int(input("No. of Nodes: "))
-g  = Graph(x)
+#x=int(input("No. of Nodes: "))
+g  = Graph(6)
+'''
 matrix=[]
 for i in range(x):
     print('From node ',i)
     matrix.append(list(map(int, input().split())))
 g.graph = matrix
-'''
-0 5 0 9 2 0
-5 0 2 0 0 0
-0 2 0 3 0 0
-9 0 3 0 0 2
-2 0 0 0 0 3 
-0 0 0 2 3 0
+[[0,5,0,9,2,0],
+[5,0,2,0,0,0],
+[0,2,0,3,0,0],
+[9,0,3,0,0,2],
+[2,0,0,0,0,3], 
+[0,0,0,2,3,0]]
  '''
 g.dijkstra(0)
  
